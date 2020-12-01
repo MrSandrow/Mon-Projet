@@ -1,23 +1,23 @@
-formulaire avec un bouton submit qui envoie vers une page de remerciement
-flexbox
-grid
-responsive (pratiques responsive + media queries)
-blog (cms & avec une fonction recherche)
-plusieurs photos (site vitrine)
-transition (bouton qui change de couleur + border shadow quand on hover le div qui contient ce bouton) & (transitions cool ex: transform)
-webkit
-bootstrap
-déployé sur github & netlify
-boutons qui déclenchent une animation
-bouton qui fait défiler la page
-Icones, images et animations svg
-polices de google fonts
-dégradé
-footer avec des icones
-background-clip & background: fixed; (https://css-tricks.com/lets-look-50-interesting-css-properties-values/#background-clip)
-preloader
-menu qui apparait quand on passe le curseur dessus
-flouter une image + supprimer ce flou en cliquant sur un bouton
-video en background + texte par dessus (au milieu)
-cards
-checkbox
+- formulaire avec un bouton submit qui envoie vers une page de remerciement
+- flexbox
+- grid
+- responsive (pratiques responsive + media queries)
+- blog (cms & avec une fonction recherche)
+- plusieurs photos (site vitrine)
+- transition (bouton qui change de couleur + border shadow quand on hover le div qui contient ce bouton) & (transitions cool ex: transform)
+- webkit
+- bootstrap
+- déployé sur github & netlify
+- boutons qui déclenchent une animation
+- bouton qui fait défiler la page
+- Icones, images et animations svg
+- polices de google fonts
+- dégradé
+- footer avec des icones
+- background-clip & background: fixed; (https://css-tricks.com/lets-look-50-interesting-css-properties-values/#background-clip)
+- preloader
+- menu qui apparait quand on passe le curseur dessus
+- flouter une image + supprimer ce flou en cliquant sur un bouton
+- video en background + texte par dessus (au milieu)
+- cards
+- checkbox
