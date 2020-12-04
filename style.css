@@ -1,63 +1,127 @@
+/* 0. CSS Setup */
+
 html {
-    font-size: 3vh
+    /* Fonts */
+    font-size: 16px;
+    --sans: Montserrat, Arial, sans-serif; 
+
+    /* Colors */
+    --main: rgb(0, 0, 0); 
+    --second: rgb(255, 255, 255);
+
+    /* Hiding Scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+html::-webkit-scrollbar {
+    display: none;
+  }
 
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
+    box-sizing: border-box;
+    background: var(--second);
 }
 
-h1, h2 {
-    color: rgb(0, 0, 0);
-    font-family: Montserrat, Arial, sans-serif;
-    text-align: center;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ol,
+ul,
+img,
+button {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    margin: 25px auto 0px;
-    transition: 350ms 100ms;
-    border-radius: 5px;
-    box-shadow: 3px 3px 15px 0px rgb(131, 131, 131);
-    background-color: rgb(0, 0, 0);
-    padding: 30px;
-    font-size: 1rem;
-}
+/* 1. Header */
 
-p {
-    text-align: center;
-    font-size: 1rem;
-    font-family: monospace;
-    font-style: italic;
-}
-
-.flex {
-    display: flex;
-}
-
-h1:hover {
-    color: rgb(255, 187, 0);
-    font-size: 1.75rem;
-    cursor: pointer;
-}
-
-footer {
-    background-color: rgb(0, 0, 37);
-}
-
-.liste {
-    font-family: monospace;
-    font-size: 0.85rem;
+.a {
+    background: var(--second);
+    height: 100vh;
+    display: flex; 
     justify-content: center;
-    margin-top: -20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 900px) {
-    h1 {
-    transition: 350ms 100ms;
-    max-width: 85vw;
+.a h1 {
+    font-family: var(--sans);
+    font-size: 19rem;
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--second);
+    position: relative;
+}
+
+.a div {
+    position: absolute;
+    align-self: flex-end;
+    font-size: 12rem;
+}
+
+.a i {
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 4rem;
+}
+
+.c {
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/background.jpg);
+    background-size: cover;
+}
+
+.c h1 {
+    font-family: var(--sans);
+    font-size: 19rem;
+    color: var(--second);
+}  
+
+.c div {
+    position: absolute;
+    align-self: flex-end;
+    font-size: 12rem;
+}
+
+.c i {
+    color: white;
+    padding-bottom: 4rem;
+}    
+
+i:hover {
+    filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
+    transform: scale(1.1) translateY(10px);
+}
+
+/* 2. Main Content */
+
+section {
+    height: 100vh;
+    background: var(--main);
+}
+
+/* 3. Media Queries */
+
+@media (min-width: 600px) {
+    .a div, .c div {
+        font-size: 7rem;
     }
     
-    h1:hover {
-        max-width: 85vw;        
-    }
+    .a i, .c i {
+        padding-bottom: 2rem;
+    } 
 }
