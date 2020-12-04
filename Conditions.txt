@@ -19,4 +19,4 @@
 
 1. Choisir un des 2 Headers 
 2. Remplir la première section (Grid & Cards/Images)
-3. Ajouter une Gallerie (Site Vitrine)
+3. Ajouter une Gallerie (Site Vitrine)  
