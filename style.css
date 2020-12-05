@@ -2,7 +2,7 @@
 
 html {
     /* Fonts */
-    font-size: 5.5px;
+    font-size: 12px;
     --sans: Montserrat, Arial, sans-serif; 
 
     /* Colors */
@@ -20,7 +20,7 @@ html::-webkit-scrollbar {
 
 body {
     box-sizing: border-box;
-    background: var(--second);
+    background: var(--main);
 }
 
 body,
@@ -42,41 +42,7 @@ button {
 
 /* 1. Header */
 
-.a {
-    background: var(--second);
-    height: 100vh;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.a h1 {
-    font-family: var(--sans);
-    font-size: 19rem;
-    background: url(img/background.jpg) no-repeat;
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--second);
-    position: relative;
-}
-
-.a div {
-    position: absolute;
-    align-self: flex-end;
-    font-size: 12rem;
-}
-
-.a i {
-    background: url(img/background.jpg) no-repeat;
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-bottom: 4rem;
-}
-
-.c {
+header {
     height: 100vh;
     display: flex; 
     justify-content: center;
@@ -85,47 +51,140 @@ button {
     background-size: cover;
 }
 
-.c h1 {
+header h1 {
     font-family: var(--sans);
-    font-size: 19rem;
+    font-size: 8.5rem;
     color: var(--second);
 }  
 
-.c div {
+header div {
     position: absolute;
     align-self: flex-end;
-    font-size: 7rem;
+    font-size: 4rem;
 }
 
-.c i {
+header i {
     color: white;
-    padding-bottom: 4rem;
+    padding-bottom: 0.65rem;
+    transition: all 0.2s ease;
 }    
 
-i:hover {
-    filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
-    transform: scale(1.1) translateY(10px);
-}
+
 
 /* 2. Main Content */
 
 section {
-    height: 100vh;
-    background: var(--main);
+    min-height: 100vh;
+}
+
+/* 2.1 First Section */
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+}
+
+.first div {
+    max-width: 85vw;
+}
+
+h1 {
+    font-family: var(--sans);
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    margin: 1.65rem 0;  
+}
+
+.first p {
+    font-family: var(--sans); 
+    font-size: 1.35rem;
+    font-style: italic;
+    color: white;
+    margin: 1.35rem 0;
+}
+
+.first img {
+    max-width: 85vw;
+    border-radius: 2px;
+}
+
+/* 2.2 Second Section */
+
+.second {
+    background-color: var(--second);
+}
+
+.second h1 {
+    color: rgb(0, 0, 0);
+    padding-top: 1.65rem;
+}
+
+.second .container {
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    column-gap: 1.5rem;
+}
+
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    flex: 1 1 350px;
+    margin-bottom: 1.5rem;
+}
+
+#last {
+    display: none;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0px 0.5px 20px -3px rgb(24, 24, 24);
+    transition: all 0.4s ease;
 }
 
 /* 3. Media Queries */
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
     html {
         font-size: 16px;
     }
-    
-    .a div, .c div {
-        font-size: 7rem;
+
+    header h1 {
+        font-size: 10rem;
+    }  
+
+    header i:hover {
+        filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
+        transform: scale(1.1) translateY(10px);
+    }
+
+    .container img:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 25px;
     }
     
-    .a i, .c i {
-        padding-bottom: 2rem;
-    } 
+    header h1 {
+        font-size: 11rem;
+    }  
+
+    header div {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1350px) {
+    #last {
+        display: flex;
+    }
 }

@@ -1,22 +1,29 @@
-- Footer avec des icones
-- Blog (CMS & avec une fonction recherche)
-- Cards
-- Checkbox
-- Dégradé
-- Boutons qui déclenchent une animation
-- Bouton qui fait défiler la page
-- Transition (bouton qui change de couleur + border shadow quand on hover le div qui contient ce bouton) & (transitions cool ex: transform)
-- Formulaire avec un bouton submit qui envoie vers une page de remerciement
-- Menu qui apparait quand on passe le curseur dessus
-- Flouter une image + supprimer ce flou en cliquant sur un bouton
-- Vidéo en background + texte par dessus (au milieu)
-- Page 404
-
 - Grid
+- Bouton avec un Dégradé & une Transition (Hover)
+- Bouton qui déclenche une animation
+- Menu qui apparait quand on passe le curseur dessus
+- Vidéo en Background + Texte par dessus (au milieu)
+- Flouter une image & Supprimer ce flou en cliquant sur un bouton
 - Images et animations svg
 
 
 
-1. Choisir un des 2 Headers 
-2. Remplir la première section (Grid & Cards/Images)
-3. Ajouter une Gallerie (Site Vitrine)  
+
+
+
+
+
+
+
+Header
+Image & Texte
+Gallerie (Site Vitrine)
+Aperçu du blog (2-3 Cards)
+Liste des fonctions à ajouter (Checkbox)
+Formulaire (Bouton Submit qui envoie vers une page de remerciement)
+Footer (Icones)
+
+Optimiser le site pour Ordinateur
+Ajouter des class à tous les divs
+Page 404
+Blog (CMS & Fonction Recherche)
