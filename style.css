@@ -123,6 +123,7 @@ h1 {
 
 .second .container {
     width: 85vw;
+    height: auto;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap; 
@@ -132,8 +133,7 @@ h1 {
 .container div {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 350px;
-    flex-grow: 1;
+    flex: 1 1 350px;
 }
 
 #last {
