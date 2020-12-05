@@ -142,7 +142,7 @@ h1 {
 
 .container img {
     width: 100%;
-    align-self: center
+    align-self: center;
     padding: 0;
     margin-bottom: 1.5rem;
     border-radius: 3px;
