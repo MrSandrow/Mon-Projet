@@ -30,4 +30,3 @@ Blog (CMS & Fonction Recherche)
 
 Nettoyer mon code
 Remplacer le column-gap
-Éviter que le container de l'image soit étiré
