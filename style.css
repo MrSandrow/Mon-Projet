@@ -64,7 +64,7 @@ header div {
 }
 
 header i {
-    color: white;
+    color: var(--second);
     padding-bottom: 0.65rem;
     transition: all 0.2s ease;
 }    
@@ -79,7 +79,7 @@ h1 {
     font-family: var(--sans);
     font-size: 3rem;
     text-align: center;
-    color: white;
+    color: var(--second);
     margin: 1.65rem 0;  
 }
 
@@ -100,7 +100,7 @@ h1 {
     font-family: var(--sans); 
     font-size: 1.35rem;
     font-style: italic;
-    color: white;
+    color: var(--second);
     margin: 1.35rem 0;
 }
 
@@ -116,7 +116,7 @@ h1 {
 }
 
 .second h1 {
-    color: rgb(0, 0, 0);
+    color: var(--main);
     padding-top: 1.65rem;
 }
 
