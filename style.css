@@ -69,15 +69,22 @@ header i {
     transition: all 0.2s ease;
 }    
 
-
-
 /* 2. Main Content */
 
 section {
     min-height: 100vh;
 }
 
+h1 {
+    font-family: var(--sans);
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    margin: 1.65rem 0;  
+}
+
 /* 2.1 First Section */
+
 .first {
     display: flex;
     flex-wrap: wrap;
@@ -87,14 +94,6 @@ section {
 
 .first div {
     max-width: 85vw;
-}
-
-h1 {
-    font-family: var(--sans);
-    font-size: 3rem;
-    text-align: center;
-    color: white;
-    margin: 1.65rem 0;  
 }
 
 .first p {
@@ -123,30 +122,28 @@ h1 {
 
 .second .container {
     width: 85vw;
-    /* height: auto; */
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap; 
-    column-gap: 1.5rem;
 }
 
 .container div {
-    /* display: flex; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex: 1 1 350px;
-}
-
-#last {
-    display: none;
+    text-align: center;
 }
 
 .container img {
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     align-self: flex-start;
     border-radius: 3px;
     box-shadow: 0px 0.5px 20px -3px rgb(24, 24, 24);
     transition: all 0.4s ease;
+}
+
+#last {
+    display: none;
 }
 
 /* 3. Media Queries */
@@ -163,6 +160,11 @@ h1 {
     header i:hover {
         filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
         transform: scale(1.1) translateY(10px);
+    }
+
+    .container img {
+        width: calc(100% - 1.5rem);
+        margin-bottom: 1.5rem;
     }
 
     .container img:hover {
@@ -186,6 +188,6 @@ h1 {
 
 @media (min-width: 1350px) {
     #last {
-        display: flex;
+        display: block;
     }
 }
