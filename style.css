@@ -20,7 +20,7 @@ html::-webkit-scrollbar {
 
 body {
     box-sizing: border-box;
-    background: ar(--main);
+    background: var(--main);
 }
 
 body,
