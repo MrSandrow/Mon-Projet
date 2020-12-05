@@ -128,7 +128,6 @@ h1 {
 }
 
 .container div {
-    /* flex-wrap: wrap; */
     flex: 1 1 350px;
     text-align: center;
 }
@@ -164,7 +163,6 @@ h1 {
 
     .container img {
         width: calc(100% - 1.5rem);
-        margin-bottom: 1.5rem;
     }
 
     .container img:hover {
@@ -183,6 +181,10 @@ h1 {
 
     header div {
         font-size: 3rem;
+    }
+
+    .container img {
+        margin-bottom: 1.5rem;
     }
 }
 
