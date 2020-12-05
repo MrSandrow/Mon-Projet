@@ -162,7 +162,7 @@ h1 {
     }
 
     .container img {
-        width: calc(100% - 1.5rem);
+        width: calc(100% - 2rem);
     }
 
     .container img:hover {
@@ -184,6 +184,7 @@ h1 {
     }
 
     .container img {
+        width: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
     }
 }
