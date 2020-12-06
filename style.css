@@ -56,10 +56,10 @@ header h1 {
 }  
 
 .arrow {
-    width: 2.5rem;
+    width: 1.85rem;
     position: absolute;
     align-self: flex-end;
-    margin-bottom: 12px;
+    margin-bottom: 0.45rem;
     transition: all 0.4s ease;
     display: none
 }
@@ -156,10 +156,6 @@ h1 {
         font-size: 10rem;
     }  
 
-    .arrow {
-        display: block;
-    }
-
     .container img {
         width: calc(100% - 2rem);
     }
@@ -179,7 +175,7 @@ h1 {
     }  
 
     .arrow {
-        width: 1.85rem;
+        display: block;
     }
 
     .container img {
