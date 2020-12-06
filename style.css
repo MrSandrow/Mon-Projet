@@ -52,22 +52,22 @@ header {
 }
 
 header h1 {
-    font-family: var(--sans);
     font-size: 8.5rem;
-    color: var(--second);
 }  
 
-header div {
+.arrow {
+    width: 2.5rem;
     position: absolute;
     align-self: flex-end;
-    font-size: 4rem;
+    margin-bottom: 12px;
+    transition: all 0.4s ease;
+    display: none
 }
 
-header i {
-    color: var(--second);
-    padding-bottom: 0.65rem;
-    transition: all 0.2s ease;
-}    
+.arrow:hover {
+    filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
+    transform: scale(1.1) translateY(12px);
+}
 
 /* 2. Main Content */
 
@@ -76,10 +76,10 @@ section {
 }
 
 h1 {
-    font-family: var(--sans);
     font-size: 3rem;
-    text-align: center;
+    font-family: var(--sans);
     color: var(--second);
+    text-align: center;
     margin: 1.65rem 0;  
 }
 
@@ -96,17 +96,17 @@ h1 {
     max-width: 85vw;
 }
 
-.first p {
-    font-family: var(--sans); 
-    font-size: 1.35rem;
-    font-style: italic;
-    color: var(--second);
-    margin: 1.35rem 0;
-}
-
 .first img {
     max-width: 85vw;
     border-radius: 2px;
+}
+
+.first p {
+    font-size: 1.35rem;
+    font-family: var(--sans); 
+    color: var(--second);
+    font-style: italic;
+    margin: 1.35rem 0;
 }
 
 /* 2.2 Second Section */
@@ -120,7 +120,7 @@ h1 {
     padding-top: 1.65rem;
 }
 
-.second .container {
+.container {
     width: 85vw;
     margin: 0 auto;
     display: flex;
@@ -156,9 +156,8 @@ h1 {
         font-size: 10rem;
     }  
 
-    header i:hover {
-        filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
-        transform: scale(1.1) translateY(10px);
+    .arrow {
+        display: block;
     }
 
     .container img {
@@ -179,8 +178,8 @@ h1 {
         font-size: 11rem;
     }  
 
-    header div {
-        font-size: 3rem;
+    .arrow {
+        width: 1.85rem;
     }
 
     .container img {
