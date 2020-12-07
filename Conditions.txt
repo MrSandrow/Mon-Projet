@@ -1,5 +1,4 @@
-- Grid
-- Bouton avec un Dégradé & une Transition (Hover)
+- Bouton avec une Transition (Hover)
 - Bouton qui déclenche une animation
 - Menu qui apparait quand on passe le curseur dessus
 - Vidéo en Background + Texte par dessus (au milieu)
@@ -26,3 +25,6 @@ Footer (Icones)
 Optimiser le site pour Ordinateur
 Page 404
 Blog (CMS & Fonction Recherche)
+
+
+Ajouter les animations @992px
