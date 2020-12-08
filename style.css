@@ -44,18 +44,13 @@ header h1 {
     font-size: 8.5rem;
 }  
 
-.arrow {
+header .arrow {
     width: 1.85rem;
+    display: none;
     position: absolute;
     align-self: flex-end;
     margin-bottom: 0.45rem;
     transition: all 0.4s ease;
-    display: none
-}
-
-.arrow:hover {
-    filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
-    transform: scale(1.1) translateY(12px);
 }
 
 /* 2. Main Content */
@@ -70,7 +65,7 @@ h1 {
     font-family: var(--sans);
     color: var(--second);
     text-align: center;
-    padding: 1.7rem 0;  
+    padding-top: 1.65rem; 
 }
 
 h2 {
@@ -99,11 +94,12 @@ button {
     transition: all ease 0.3s;
 }
 
-button:hover {
-    cursor: pointer;
+.container {
+    margin: 0 auto;
+    padding-top: 1.7rem;
 }
 
-.last, .lust {
+#last {
     display: none;
 }
 
@@ -118,6 +114,10 @@ button:hover {
 
 .first .content {
     max-width: 85vw;
+}
+
+.first h1 {
+    padding-bottom: 1.7rem;
 }
 
 .first img {
@@ -137,12 +137,10 @@ button:hover {
 
 .second h1 {
     color: var(--main);
-    padding-top: 1.65rem;
 }
 
 .second .container {
     width: 85vw;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap; 
 }
@@ -165,19 +163,33 @@ button:hover {
 
 .third {
     background: var(--main);
+    padding-bottom: 3.75rem;
 }
 
 .third .container {
     width: 70vw;
-    margin: 0 auto 2rem;
     display: grid;
+    grid-gap: 3rem 2rem;
     align-self: center;
-    grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
 }
 
 .third .content {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
     text-align: center;
+}
+
+.third .overlay {
+    grid-row: 2;
+}
+
+.third p {
+    width: 90%;
+}
+
+.third a {
+    height: fit-content;
+    margin: 0 auto;
 }
 
 .third .card {
@@ -190,11 +202,11 @@ button:hover {
     border-radius: 2px;
 }
 
-.third p {
-    width: 90%;
-}
-
 /* 2.4 Fourth Section */
+
+.fourth {
+    background: var(--second);
+}
 
 .fourth h1 {
     color: var(--main);
@@ -243,61 +255,123 @@ footer {
     }
 
     p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         margin: 1rem auto;
     }
 
     button {
         font-size: 0.6rem;
     }
-    
-    button:hover {
-        transform: scale(1.15);
-    }
-
-    .lust {
-        display: block;
-    }
 
     header h1 {
         font-size: 11rem;
     }  
-
-    header .arrow {
-        display: block;
-    }
 
     .second img {
         width: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
     }
 
-    .second img:hover {
-        transform: scale(1.05);
-    }
-
     .third {
         display: grid;
         grid-template-rows: 5.2rem 1fr;
-        row-gap: 1rem;
     }
 
     .third .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 85vw;
     }
 
     .third .card {
-        height: 20rem;
+        height: 25rem;
     }
 }
 
 @media (min-width: 1350px) {
-    .last {
+    #last {
         display: block;
     }
 
     .third .container {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .third #last {
+        display: grid;
+    }
+}
+
+@media (hover: hover) {
+    button:hover {
+        transform: scale(1.15);
+        cursor: pointer;
+    }
+
+    .second img:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (hover: hover) and (min-width: 992px) {
+    header .arrow {
+        display: block;
+    }
+
+    header .arrow:hover {
+        filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
+        transform: scale(1.1) translateY(12px);
+    }
+
+    .third .overlay {
+        width: calc((85vw - 2rem) / 2);
+        height: 25rem;
+        display: grid;
+        grid-template-rows: 10.7rem 1fr 3fr;
+        position: absolute;
+        cursor: default;
+        opacity: 0;
+        transform: scale(0.5);
+        z-index: 1;
+        transition: opacity ease 0.4s, transform ease-out 0.25s;
+    }
+
+    .third .content:hover .overlay {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .third p {
+        max-width: 300px;
+        grid-row: 2;
+    }
+
+    .third a {
+        grid-row: 3;
+    }
+
+    .third .card::after {
+        content: '';
+        width: calc((85vw - 2rem) / 2);
+        height: 25rem;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+        opacity: 0;
+        transition: all ease-out 0.25s;
+    }
+
+    .third .content:hover .card::after {
+        opacity: 1;
+    }
+
+    .third h2 {
+        cursor: default;
+        margin-bottom: 4.9rem;
+        z-index: 1;
+    }
+}
+
+@media (hover: hover) and (min-width: 1350px) {
+    .third .overlay, .third .card::after {
+        width: calc((85vw - 6rem) / 4);
     }
 }
