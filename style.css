@@ -126,6 +126,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 3.75rem;
 }
 
 .first .content {
@@ -446,11 +447,7 @@ footer {
     }
 }
 
-@media (orientation: landscape) and (max-width: 900px) {
-    .first .container {
-        padding-top: 3.75rem;
-    }
-    
+@media (orientation: landscape) and (max-width: 992px) {
     .container {
         width: 60vw !important;
     }
