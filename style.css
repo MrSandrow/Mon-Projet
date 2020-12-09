@@ -446,7 +446,7 @@ footer {
     }
 }
 
-@media (orientation: landscape) and (max-width: 992px) {
+@media (orientation: landscape) and (max-width: 900px) {
     .first .container {
         padding-top: 3.75rem;
     }
