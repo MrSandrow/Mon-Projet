@@ -452,6 +452,6 @@ footer {
     }
     
     .container {
-        width: 60vw;
+        width: 60vw !important;
     }
 }
