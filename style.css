@@ -118,7 +118,7 @@ button {
 .first {
     background: var(--main);
     display: flex;
-    padding-top: 2rem;
+    padding-top: 40px;
 }
 
 .first .container {
