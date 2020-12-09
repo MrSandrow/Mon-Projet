@@ -445,3 +445,13 @@ footer {
         width: calc((85vw - 6rem) / 4);
     }
 }
+
+@media (orientation: landscape) and (max-width: 992px) {
+    .first .container {
+        padding-top: 3.75rem;
+    }
+    
+    .container {
+        width: 60vw;
+    }
+}
