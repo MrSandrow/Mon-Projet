@@ -253,7 +253,6 @@ button {
     font-size: 1.4rem;
     font-family: var(--sans);
     display: flex;
-    align-items: center;
     padding: 0 0 2.25rem 3rem;
 }
 
