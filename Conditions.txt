@@ -1,11 +1,10 @@
+- Page 404
+- Blog (CMS & Fonction Recherche)
+- Page de remerciement du Formulaire
 - Bouton qui déclenche une animation
 - Menu qui apparait quand on passe le curseur dessus
-- Vidéo en Background + Texte par dessus (au milieu)
 - Flouter une image & Supprimer ce flou en cliquant sur un bouton
 - Images et animations svg
-
-
-
 
 
 
@@ -19,13 +18,14 @@ Gallerie (Site Vitrine)
 Aperçu du blog (2-3 Cards)
 Liste des fonctions à ajouter (Checkbox)
 Formulaire (Bouton Submit qui envoie vers une page de remerciement)
-Footer (Icones)
-
-Page 404
-Blog (CMS & Fonction Recherche)
+Footer
 
 
 
-Créer la 4ème section
+
+
+
+
+Tester mon code
 Faire un design de la 5ème section
 Créer la 5ème section
