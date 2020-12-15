@@ -1,14 +1,3 @@
-- Bouton qui déclenche une animation
-- Menu qui apparait quand on passe le curseur dessus
-- Flouter une image & Supprimer ce flou en cliquant sur un bouton
-- Images et animations svg
-
-
-
-
-
-
-
 Header
 Image & Texte
 Gallerie (Site Vitrine)
@@ -20,8 +9,6 @@ Footer
 
 
 
-
-Linker la page 404
-Faire un design de la 5ème section
-Créer la 5ème section
-Personnaliser la page de remerciement
+Nettoyer mon code
+Tester mon code
+Flouter une image & Supprimer ce flou en cliquant sur un bouton (1ère Section)

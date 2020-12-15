@@ -90,6 +90,8 @@ button {
     background: var(--button);
     color: var(--second);
     font-family: var(--sans);
+    width: fit-content;
+    margin: 1em auto;
     font-size: 1.3rem;
     font-weight: 900;
     border-radius: 3em;
@@ -217,6 +219,10 @@ button {
     margin: 0 auto;
 }
 
+.third button {
+    margin: 0 auto
+}
+
 .third .card {
     height: 27rem;
     display: flex;
@@ -284,6 +290,70 @@ button {
 .fifth {
     background: var(--main);
     position: relative;
+    display: grid;
+    grid-template-rows: 4.6rem 1fr;
+    grid-gap: 1.75rem;
+}
+
+.fifth .container {
+    width: 80vw;
+    max-width: 550px;
+    align-self: center;
+    padding-top: 0;
+}
+
+.fifth .content {
+    text-align: center;
+}
+
+.fifth form {
+    display: grid;
+}
+
+.fifth label {
+    color: var(--second);
+    font-family: var(--sans);
+    font-weight: 700;
+    text-align: left;
+    background: var(--main);
+    padding: 0 0.25rem;
+    transform: translate(1.5rem, 0.6rem);
+    width: fit-content;
+    border-radius: 2px;
+    font-size: 1.1rem;
+}
+
+.fifth input, .fifth textarea {
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 1.25rem;
+    border: solid var(--second) 1px;
+    background: var(--main);
+    color: var(--second);
+    font-family: var(--sans);
+    font-weight: 700;
+    transition: all ease 0.1s;
+}
+
+.fifth input {
+    height: 4rem;
+    padding: 0 1.25rem;
+}
+
+.fifth textarea {
+    height: 15rem;
+    resize: none;
+    padding: 1.25rem;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
 }
 
 /* 2.6 Last Section */
@@ -325,13 +395,18 @@ footer p {
 /* 4. Form Submit & 404 Page */
 
 .submit .container {
+    width: 85vw;
     align-self: center;
     text-align: center;
-    width: 85vw;
 }
 
-.submit h1 {
-    padding: 0 0 2.5rem 0;
+.submit h2 {
+    color: var(--main);
+    font-size: 2rem;
+}
+
+.submit button {
+    margin-top: 2.5rem;
 }
 
 /* 5. Media Queries */
@@ -355,6 +430,33 @@ footer p {
 
     .third .container {
         width: 65vw;
+    }
+
+    .fifth .content {
+        background: var(--button);
+        /* background-size: 400%; */
+        padding: 0.5rem;
+        border-radius: 2rem;
+        animation: 20s linear gradient infinite alternate;
+        margin-bottom: 1.5rem;
+    }
+
+    .fifth form {
+        background: var(--main);
+        padding: 1rem 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .fifth input, .fifth textarea {
+        font-size: 0.9rem;
+    }
+
+    .fifth button {
+        font-size: 1rem;
+    }
+
+    .fifth input {
+        height: 3rem;
     }
 
     footer p {
@@ -436,7 +538,33 @@ footer p {
         width: 0.25rem;
         left: calc((1.75rem - 0.25rem) / 2);
     }
-    
+
+    .fifth .container {
+        width: 55vw;
+        padding-top: 0.5rem;
+    }
+
+    .fifth input {
+        height: 2rem;
+        font-size: 0.6rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .fifth textarea {
+        height: 12rem;
+        font-size: 0.6rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .fifth button {
+        font-size: 0.6rem;
+    }
+
+    .fifth label {
+        font-size: 0.65rem;
+        transform: translate(1.25rem, 0.35rem);
+    }
+
     footer p {
         font-size: 0.6rem;
     }
@@ -477,6 +605,52 @@ footer p {
         transform: rotate(-10deg);
         margin-left: 5%;
     }
+
+    .fifth {
+        grid-template-rows: 6.6rem 1fr;
+    }
+
+    .fifth h1 {
+        font-size: 5rem;
+    }
+
+    .fifth .container {
+        width: 40vw;
+    }
+
+    .fifth label {
+        color: var(--second);
+        font-family: var(--sans);
+        font-weight: 700;
+        text-align: left;
+        background: var(--main);
+        padding: 0 0.25rem;
+        transform: translate(1.5rem, 0.3rem);
+        width: fit-content;
+        border-radius: 2px;
+        font-size: 0.75rem;
+    }
+    
+    .fifth input, .fifth textarea {
+        width: 100%;
+        border-radius: 2rem;
+        margin-bottom: 0.5rem;
+        border: solid var(--second) 1px;
+        background: var(--main);
+        color: var(--second);
+        font-family: var(--sans);
+        font-weight: 700;
+        transition: all ease 0.1s;
+    }
+    
+    .fifth input {
+        padding: 0 1.25rem;
+    }
+    
+    .fifth textarea {
+        height: 12rem;
+        padding: 1.25rem;
+    }
 }
 
 @media (hover: hover) {
@@ -487,6 +661,10 @@ footer p {
 
     .second img:hover {
         transform: scale(1.05);
+    }
+
+    .fifth input:focus, .fifth textarea:focus {
+        border: solid var(--second) 4px;
     }
 }
 
@@ -557,6 +735,10 @@ footer p {
 @media (orientation: landscape) and (max-width: 992px) {
     .container {
         width: 60vw !important;
+    }
+
+    .fifth {
+        grid-gap: 2rem;
     }
 
     .fourth .container {
