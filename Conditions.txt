@@ -1,12 +1,2 @@
-Header
-Image & Texte
-Gallerie (Site Vitrine)
-Aperçu du blog (2-3 Cards)
-Liste des fonctions à ajouter (Checkbox)
-Formulaire (Bouton Submit qui envoie vers une page de remerciement)
-Footer
-
-
-
-Flouter une image & Supprimer ce flou en cliquant sur un bouton (1ère Section)
+Compresser Palm & Cards + Supprimer Google Fonts
 Tester mon code
