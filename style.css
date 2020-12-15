@@ -60,6 +60,7 @@ header .arrow {
 section {
     min-height: 100vh;
     padding-bottom: 1.75rem;
+    position: relative;
 }
 
 h1 {
@@ -289,10 +290,9 @@ button {
 
 .fifth {
     background: var(--main);
-    position: relative;
     display: grid;
     grid-template-rows: 4.6rem 1fr;
-    grid-gap: 1.75rem;
+    grid-gap: 2rem;
 }
 
 .fifth .container {
@@ -302,36 +302,29 @@ button {
     padding-top: 0;
 }
 
-.fifth .content {
-    text-align: center;
-}
-
 .fifth form {
     display: grid;
 }
 
 .fifth label {
+    width: fit-content;
+    background: var(--main);
     color: var(--second);
     font-family: var(--sans);
     font-weight: 700;
-    text-align: left;
-    background: var(--main);
-    padding: 0 0.25rem;
-    transform: translate(1.5rem, 0.6rem);
-    width: fit-content;
-    border-radius: 2px;
     font-size: 1.1rem;
+    padding: 0 0.25rem;
+    border-radius: 2px;
+    transform: translate(1.5rem, 0.6rem);
 }
 
 .fifth input, .fifth textarea {
-    width: 100%;
-    border-radius: 2rem;
-    margin-bottom: 1.25rem;
-    border: solid var(--second) 1px;
     background: var(--main);
     color: var(--second);
     font-family: var(--sans);
-    font-weight: 700;
+    border: solid var(--second) 1px;
+    border-radius: 2rem;
+    margin-bottom: 1.25rem;
     transition: all ease 0.1s;
 }
 
@@ -342,18 +335,8 @@ button {
 
 .fifth textarea {
     height: 15rem;
-    resize: none;
     padding: 1.25rem;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: left;
-    }
-
-    100% {
-        background-position: right;
-    }
+    resize: none;
 }
 
 /* 2.6 Last Section */
@@ -434,10 +417,8 @@ footer p {
 
     .fifth .content {
         background: var(--button);
-        /* background-size: 400%; */
         padding: 0.5rem;
         border-radius: 2rem;
-        animation: 20s linear gradient infinite alternate;
         margin-bottom: 1.5rem;
     }
 
@@ -447,11 +428,7 @@ footer p {
         border-radius: 1.5rem;
     }
 
-    .fifth input, .fifth textarea {
-        font-size: 0.9rem;
-    }
-
-    .fifth button {
+    .fifth input, .fifth textarea, .fifth button {
         font-size: 1rem;
     }
 
@@ -539,9 +516,9 @@ footer p {
         left: calc((1.75rem - 0.25rem) / 2);
     }
 
-    .fifth .container {
-        width: 55vw;
-        padding-top: 0.5rem;
+    .fifth label {
+        font-size: 0.65rem;
+        transform: translate(1.25rem, 0.35rem);
     }
 
     .fifth input {
@@ -558,11 +535,6 @@ footer p {
 
     .fifth button {
         font-size: 0.6rem;
-    }
-
-    .fifth label {
-        font-size: 0.65rem;
-        transform: translate(1.25rem, 0.35rem);
     }
 
     footer p {
@@ -607,49 +579,11 @@ footer p {
     }
 
     .fifth {
-        grid-template-rows: 6.6rem 1fr;
+        grid-template-rows: 5.6rem 1fr;
     }
 
     .fifth h1 {
-        font-size: 5rem;
-    }
-
-    .fifth .container {
-        width: 40vw;
-    }
-
-    .fifth label {
-        color: var(--second);
-        font-family: var(--sans);
-        font-weight: 700;
-        text-align: left;
-        background: var(--main);
-        padding: 0 0.25rem;
-        transform: translate(1.5rem, 0.3rem);
-        width: fit-content;
-        border-radius: 2px;
-        font-size: 0.75rem;
-    }
-    
-    .fifth input, .fifth textarea {
-        width: 100%;
-        border-radius: 2rem;
-        margin-bottom: 0.5rem;
-        border: solid var(--second) 1px;
-        background: var(--main);
-        color: var(--second);
-        font-family: var(--sans);
-        font-weight: 700;
-        transition: all ease 0.1s;
-    }
-    
-    .fifth input {
-        padding: 0 1.25rem;
-    }
-    
-    .fifth textarea {
-        height: 12rem;
-        padding: 1.25rem;
+        font-size: 4rem;
     }
 }
 
@@ -735,10 +669,6 @@ footer p {
 @media (orientation: landscape) and (max-width: 992px) {
     .container {
         width: 60vw !important;
-    }
-
-    .fifth {
-        grid-gap: 2rem;
     }
 
     .fourth .container {

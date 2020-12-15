@@ -8,7 +8,5 @@ Footer
 
 
 
-
-Nettoyer mon code
-Tester mon code
 Flouter une image & Supprimer ce flou en cliquant sur un bouton (1ère Section)
+Tester mon code
