@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: Montserrat;
     font-weight: 700;
     font-display: swap;
@@ -17,7 +17,7 @@
     font-weight: 300;
     font-display: swap;
     src: url(fonts/Italic.woff2) format("woff2"), url(fonts/Italic.woff) format("woff");
-} */
+}
 
 /* 0. CSS Setup */
 
