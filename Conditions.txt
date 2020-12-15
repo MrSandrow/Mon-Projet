@@ -1,5 +1,5 @@
 Ajouter palm & card en xl, l, s et xs
-Compresser palm & cards
+Compresser palm & card
 Définir une image pour chaque taille d'écran & Éviter le chargement de 2 tailles différentes
 Compresser, Redimensionner et Ajouter une version WebP pour chaque image lourde
 
