@@ -1,2 +1,5 @@
-Compresser Palm & Cards + Supprimer Google Fonts
+Ajouter palm-xl, palm-l, palm-s et palm-xs
+Optimiser le chargement des images (palm) : éviter le chargement de 2 tailles différentes
+Optimiser le chargement des polices
+
 Tester mon code

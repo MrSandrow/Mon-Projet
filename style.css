@@ -1,3 +1,24 @@
+@font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-display: swap;
+    src: url(fonts/Bold.woff2) format("woff2"), url(fonts/Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/Regular.woff2) format("woff2"), url(fonts/Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-display: swap;
+    src: url(fonts/Italic.woff2) format("woff2"), url(fonts/Italic.woff) format("woff");
+}
+
 /* 0. CSS Setup */
 
 *, *::before, *::after {
@@ -38,7 +59,7 @@ header {
     display: flex; 
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/palm.jpg);
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/palm-s.jpg);
     background-size: cover;
 }
 
@@ -466,6 +487,11 @@ footer p {
 
     #big {
         display: block;
+    }
+
+    header {
+        background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/palm.jpg);
+        background-size: cover;
     }
 
     header h1 {
