@@ -60,7 +60,6 @@ header .arrow {
 section {
     min-height: 100vh;
     padding-bottom: 1.75rem;
-    position: relative;
 }
 
 h1 {
@@ -290,6 +289,7 @@ button {
 
 .fifth {
     background: var(--main);
+    position: relative;
     display: grid;
     grid-template-rows: 4.6rem 1fr;
     grid-gap: 2rem;
