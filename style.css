@@ -24,18 +24,18 @@
     background-size: cover;
 }
 
-.webp .third .card {
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/cards-l.webp);
-    background-size: cover;
-}
-
 .no-webp header, .no-js header {
     background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-s.jpg);
     background-size: cover;
 }
 
+.webp .third .card {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/card-s.webp);
+    background-size: cover;
+}
+
 .no-webp .third .card, .no-js .third .card {
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/cards-l.jpg);
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/card-s.jpg);
     background-size: cover;
 }
 
@@ -437,6 +437,16 @@ footer p {
 /* 5. Media Queries */
 
 @media (min-width: 600px) {
+    .webp .third .card {
+        background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/card-l.webp);
+        background-size: cover;
+    }
+    
+    .no-webp .third .card, .no-js .third .card {
+        background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/card-l.jpg);
+        background-size: cover;
+    }
+
     html {
         font-size: 16px;
     }
@@ -585,6 +595,16 @@ footer p {
 }
 
 @media (min-width: 1350px) {
+    .webp header {
+        background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/palm-l.webp);
+        background-size: cover;
+    }
+
+    .no-webp header, .no-js header {
+        background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-l.jpg);
+        background-size: cover;
+    }
+
     #huge {
         display: block;
     }

@@ -1,4 +1,4 @@
-Définir une image pour chaque taille d'écran & Éviter le chargement de 2 tailles différente & Adapter le preload
-
+Nettoyer mon code
 Tester avec et sans Google Fonts
+Tester avec et sans le preload des polices
 Tester mon code
