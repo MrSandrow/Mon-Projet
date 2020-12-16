@@ -1,4 +1,7 @@
-Nettoyer mon code
-Tester avec et sans Google Fonts
-Tester avec et sans le preload des polices
 Tester mon code
+Tester avec et sans :
+- Modernizr dans le header
+- Le preload des polices
+- Le preload des images
+- Google Fonts
+- Les images en WebP

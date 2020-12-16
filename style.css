@@ -1,54 +1,9 @@
-@font-face {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-display: swap;
-    src: url(fonts/bold.woff2) format("woff2"), url(fonts/bold.woff) format("woff");
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-display: swap;
-    src: url(fonts/regular.woff2) format("woff2"), url(fonts/regular.woff) format("woff");
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-weight: 300;
-    font-display: swap;
-    src: url(fonts/italic.woff2) format("woff2"), url(fonts/italic.woff) format("woff");
-}
-
-.webp header {
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/palm-s.webp);
-    background-size: cover;
-}
-
-.no-webp header, .no-js header {
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-s.jpg);
-    background-size: cover;
-}
-
-.webp .third .card {
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/card-s.webp);
-    background-size: cover;
-}
-
-.no-webp .third .card, .no-js .third .card {
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/card-s.jpg);
-    background-size: cover;
-}
-
 /* 0. CSS Setup */
 
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-:focus {
-    outline: none;
 }
 
 html {
@@ -70,6 +25,55 @@ html {
 
 html::-webkit-scrollbar {
     display: none;
+}
+
+:focus {
+    outline: none;
+}
+
+/* Font Families */
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-display: swap;
+    src: url(fonts/bold.woff2) format("woff2"), url(fonts/bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/regular.woff2) format("woff2"), url(fonts/regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-display: swap;
+    src: url(fonts/italic.woff2) format("woff2"), url(fonts/italic.woff) format("woff");
+}
+
+/* Backgrounds */
+
+.webp header {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/palm-s.webp);
+    background-size: cover;
+}
+
+.no-webp header, .no-js header {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-s.jpg);
+    background-size: cover;
+}
+
+.webp .third .card {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/card-s.webp);
+    background-size: cover;
+}
+
+.no-webp .third .card, .no-js .third .card {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/card-s.jpg);
+    background-size: cover;
 }
 
 /* 1. Header */
@@ -418,18 +422,18 @@ footer p {
 
 /* 4. Form Submit & 404 Page */
 
-.submit .container {
+.basic .container {
     width: 85vw;
     align-self: center;
     text-align: center;
 }
 
-.submit h2 {
+.basic h2 {
     color: var(--main);
     font-size: 2rem;
 }
 
-.submit button {
+.basic button {
     box-shadow: 0px 5px 20px -12px black;
     margin-top: 2.5rem;
 }
