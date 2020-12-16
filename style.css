@@ -24,7 +24,7 @@
     background-size: cover;
 }
 
-.no-webp header {
+.no-webp header, .no-js header {
     background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-s.jpg);
     background-size: cover;
 }
@@ -34,7 +34,7 @@
     background-size: cover;
 }
 
-.no-webp .third .card {
+.no-webp .third .card, .no-js .third .card {
     background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/cards-l.jpg);
     background-size: cover;
 }
