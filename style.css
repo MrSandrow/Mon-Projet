@@ -19,6 +19,26 @@
     src: url(fonts/italic.woff2) format("woff2"), url(fonts/italic.woff) format("woff");
 }
 
+.webp header {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/palm-s.webp);
+    background-size: cover;
+}
+
+.no-webp header {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-s.jpg);
+    background-size: cover;
+}
+
+.webp .third .card {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/cards-l.webp);
+    background-size: cover;
+}
+
+.no-webp .third .card {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/cards-l.jpg);
+    background-size: cover;
+}
+
 /* 0. CSS Setup */
 
 *, *::before, *::after {
@@ -59,8 +79,6 @@ header {
     display: flex; 
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-s.jpg);
-    background-size: cover;
 }
 
 header h1 {
@@ -253,8 +271,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/cards-l.jpg);
-    background-size: cover;
     border-radius: 2px;
 }
 
