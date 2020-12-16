@@ -1,4 +1,5 @@
-Définir une image pour chaque taille d'écran & Éviter le chargement de 2 tailles différentes & Ajouter WebP
+Ajouter WebP en CSS
+Définir une image pour chaque taille d'écran & Éviter le chargement de 2 tailles différente & Adapter le preload
 
 Tester avec et sans Google Fonts
 Tester mon code
