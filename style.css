@@ -202,13 +202,18 @@ button {
     text-align: center;
 }
 
-.second img {
+.second img, .second picture {
     width: 100%;
     margin-bottom: 2rem;
     align-self: flex-start;
     border-radius: 3px;
     box-shadow: 0px 0.5px 20px -3px rgb(24, 24, 24);
     transition: all 0.4s ease;
+    
+}
+
+.second picture {
+    display: contents;
 }
 
 /* 2.3 Third Section */
@@ -429,7 +434,7 @@ footer p {
         width: 70vw;
     }
 
-    .second img {
+    .second img, .second picture {
         width: calc(100% - 2rem);
     }
 
@@ -506,7 +511,7 @@ footer p {
         max-width: 600px;
     }
 
-    .second img {
+    .second img, .second picture {
         width: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
     }
@@ -615,7 +620,7 @@ footer p {
         cursor: pointer;
     }
 
-    .second img:hover {
+    .second img:hover, .second picture:hover {
         transform: scale(1.05);
     }
 
