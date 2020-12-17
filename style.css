@@ -234,7 +234,7 @@ button {
 }
 
 .second picture {
-    display: contents;
+    box-shadow: none;
 }
 
 /* 2.3 Third Section */
