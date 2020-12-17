@@ -1,7 +1,6 @@
 Tester mon code
 Tester avec et sans :
 - Modernizr dans le header
-- Le preload des images
 - Les images en WebP
 
 
