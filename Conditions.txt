@@ -1,7 +1,9 @@
 Tester mon code
 Tester avec et sans :
-- Google Fonts
 - Modernizr dans le header
 - Le preload des polices
 - Le preload des images
 - Les images en WebP
+
+
+Google Fonts > Polices locales
