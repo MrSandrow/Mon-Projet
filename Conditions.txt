@@ -1,6 +1,5 @@
 Tester mon code
 Tester avec et sans :
-- Modernizr dans le header
 - Les images en WebP
 
 
