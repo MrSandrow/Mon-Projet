@@ -1,14 +1,3 @@
 Tester mon code
-Tester avec et sans :
-- Les images en WebP
-
 
 Google Fonts vs Polices sans preload
-
-palm header
-palm
-card
-
-header & card : modernizr
-
-délai de modernizr > gain webp ?
