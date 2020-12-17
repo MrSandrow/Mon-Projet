@@ -353,6 +353,7 @@ button {
 
 .fifth label {
     width: fit-content;
+    width: intrinsic;
     background: var(--main);
     color: var(--second);
     font-family: var(--sans);
