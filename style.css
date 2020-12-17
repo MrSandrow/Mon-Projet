@@ -33,7 +33,7 @@ html::-webkit-scrollbar {
 
 /* Font Families */
 
-@font-face {
+/* @font-face {
     font-family: Montserrat;
     font-weight: 700;
     font-display: swap;
@@ -52,7 +52,7 @@ html::-webkit-scrollbar {
     font-weight: 300;
     font-display: swap;
     src: url(fonts/italic.woff2) format("woff2"), url(fonts/italic.woff) format("woff");
-}
+} */
 
 /* Backgrounds */
 
