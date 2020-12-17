@@ -4,3 +4,11 @@ Tester avec et sans :
 
 
 Google Fonts vs Polices sans preload
+
+palm header
+palm
+card
+
+header & card : modernizr
+
+délai de modernizr > gain webp ?
