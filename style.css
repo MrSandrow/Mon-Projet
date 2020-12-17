@@ -129,11 +129,7 @@ button {
     display: block;
 }
 
-#big {
-    display: none;
-}
-
-#huge {
+#big, #huge, #hover {
     display: none;
 }
 
@@ -632,6 +628,10 @@ footer p {
 }
 
 @media (hover: hover) {
+    #hover {
+        display: grid;
+    }
+
     button:hover {
         transform: scale(1.15);
         cursor: pointer;
