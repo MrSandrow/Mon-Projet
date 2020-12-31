@@ -9,14 +9,12 @@
 html {
     /* Fonts */
     font-size: 12px;
-    --sans: Montserrat, Arial, sans-serif; 
-
+    --sans: Montserrat, Arial, sans-serif;
     /* Colors */
-    --main: rgb(0, 0, 0); 
+    --main: rgb(0, 0, 0);
     --second: rgb(255, 255, 255);
-    --button: linear-gradient(90deg, rgb(172, 17, 233) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    --button: linear-gradient(90deg, rgb(172, 17, 233) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     --list: rgb(4, 61, 148);
-
     /* Hiding Scrollbar */
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -57,14 +55,14 @@ html::-webkit-scrollbar {
 
 header {
     height: 100vh;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header h1 {
     font-size: 8.5rem;
-}  
+}
 
 header .arrow {
     width: 1.85rem;
@@ -87,7 +85,7 @@ h1 {
     font-family: var(--sans);
     color: var(--second);
     text-align: center;
-    padding-top: 1.65rem; 
+    padding-top: 1.65rem;
 }
 
 h2 {
@@ -99,7 +97,7 @@ h2 {
 
 p {
     font-size: 1.35rem;
-    font-family: var(--sans); 
+    font-family: var(--sans);
     color: var(--second);
     width: 90%;
     margin: 1.5rem auto;
@@ -189,7 +187,7 @@ button {
 .second .container {
     width: 85vw;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .second .content {
@@ -419,53 +417,42 @@ footer p {
         background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/card-l.webp);
         background-size: cover;
     }
-    
     .no-webp .third .card, .no-js .third .card {
         background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/card-l.jpg);
         background-size: cover;
     }
-
     html {
         font-size: 16px;
     }
-
     header h1 {
         font-size: 10rem;
-    }  
-
+    }
     .first .container {
         width: 70vw;
     }
-
     .second img, .second picture {
         width: calc(100% - 2rem);
     }
-
     .third .container {
         width: 65vw;
     }
-
     .fifth .content {
         background: var(--button);
         padding: 0.5rem;
         border-radius: 2rem;
         margin-bottom: 1.5rem;
     }
-
     .fifth form {
         background: var(--main);
         padding: 1rem 1.5rem;
         border-radius: 1.5rem;
     }
-
     .fifth input, .fifth textarea, .fifth button {
         font-size: 1rem;
     }
-
     .fifth input {
         height: 3rem;
     }
-
     footer p {
         font-size: 1rem;
     }
@@ -475,98 +462,77 @@ footer p {
     html {
         font-size: 25px;
     }
-
     h2 {
         font-size: 1.75rem;
     }
-
     p {
         font-size: 0.6rem;
         margin: 1rem auto;
     }
-
     button {
         font-size: 0.6rem;
     }
-
     #small {
         display: none;
     }
-
     #big {
         display: block;
     }
-
     header h1 {
         font-size: 11rem;
-    }  
-
+    }
     .first h1 {
         font-size: 6rem;
     }
-
     .first img {
         max-width: 20rem;
     }
-
     .first p {
         width: 81%;
         max-width: 600px;
     }
-
     .second img, .second picture {
         width: calc(100% - 1.5rem);
         margin-bottom: 1.5rem;
     }
-
     .third {
         display: grid;
         grid-template-rows: 5.2rem 1fr;
     }
-
     .third .container {
         grid-template-columns: repeat(2, 1fr);
         width: 85vw;
     }
-
     .third .card {
         height: 25rem;
     }
-
     .fourth .container {
         padding-top: 2.7rem;
     }
-
     .fourth .content {
         margin: 0;
     }
-
     .fourth .content::before {
         width: 0.25rem;
         left: calc((1.75rem - 0.25rem) / 2);
     }
-
     .fifth label {
         font-size: 0.65rem;
         transform: translate(1.25rem, 0.35rem);
     }
-
     .fifth input {
         height: 2rem;
         font-size: 0.6rem;
         margin-bottom: 0.75rem;
     }
-
     .fifth textarea {
         height: 12rem;
         font-size: 0.6rem;
         margin-bottom: 0.75rem;
     }
-
     .fifth button {
         font-size: 0.6rem;
     }
-
     footer p {
         font-size: 0.6rem;
     }
@@ -577,51 +543,41 @@ footer p {
         background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/webp/palm-l.webp);
         background-size: cover;
     }
-
     .no-webp header, .no-js header {
         background: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), url(img/jpg/palm-l.jpg);
         background-size: cover;
     }
-
     #huge {
         display: block;
     }
-
     .first .content {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-column-gap: 1.5rem;
     }
-
     .first p {
         max-width: none;
         margin: 0 auto;
         align-self: center;
         text-align: left;
     }
-
     .third .container {
         grid-template-columns: repeat(4, 1fr);
     }
-
     .third #huge {
         display: grid;
     }
-
     .fourth {
         background: url(img/fourth.png) no-repeat right bottom;
         background-size: 30%;
     }
-
     .fourth .content {
         transform: rotate(-10deg);
         margin-left: 5%;
     }
-
     .fifth {
         grid-template-rows: 5.6rem 1fr;
     }
-
     .fifth h1 {
         font-size: 4rem;
     }
@@ -631,16 +587,13 @@ footer p {
     #hover {
         display: grid;
     }
-
     button:hover {
         transform: scale(1.15);
         cursor: pointer;
     }
-
     .second img:hover, .second picture:hover {
         transform: scale(1.05);
     }
-
     .fifth input:focus, .fifth textarea:focus {
         border: solid var(--second) 4px;
     }
@@ -650,12 +603,10 @@ footer p {
     header .arrow {
         display: block;
     }
-
     header .arrow:hover {
         filter: drop-shadow(0px 2px 5px rgb(27, 27, 27));
         transform: scale(1.1) translateY(12px);
     }
-
     .third .overlay {
         width: calc((85vw - 2rem) / 2);
         height: 25rem;
@@ -668,21 +619,17 @@ footer p {
         z-index: 1;
         transition: opacity ease 0.4s, transform ease-out 0.25s;
     }
-
     .third .content:hover .overlay {
         opacity: 1;
         transform: scale(1);
     }
-
     .third p {
         max-width: 300px;
         grid-row: 2;
     }
-
     .third a {
         grid-row: 3;
     }
-
     .third .card::after {
         content: '';
         width: calc((85vw - 2rem) / 2);
@@ -692,11 +639,9 @@ footer p {
         opacity: 0;
         transition: all ease-out 0.25s;
     }
-
     .third .content:hover .card::after {
         opacity: 1;
     }
-
     .third h2 {
         cursor: default;
         margin-bottom: 4.9rem;
@@ -714,7 +659,6 @@ footer p {
     .container {
         width: 60vw !important;
     }
-
     .fourth .container {
         padding-top: 3.7rem;
     }
